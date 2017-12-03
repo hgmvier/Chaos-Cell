@@ -9,6 +9,9 @@ https://ldjam.com/events/ludum-dare/40/$50353
 
 # Additional Info
 **Developer:** ProTendoXTechnology a.k.a hoogmin
+
 **Release Date:** December 3rd, 2017
+
 **Game Jame:** Ludum Dare 40 Compo
+
 **Ludum Dare Site:** https://ldjam.com
