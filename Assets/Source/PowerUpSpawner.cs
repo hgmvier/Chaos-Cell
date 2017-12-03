@@ -57,10 +57,8 @@ public class PowerUpSpawner : MonoBehaviour
             {
                 _player.Speed = 20f;
                 _inEffect = false;
-                Debug.Log("Duration is over");
             }
 
-            Debug.Log(_durationTimer);
             _durationTimer -= Time.deltaTime;
         }
     }
