@@ -7,12 +7,14 @@ public class MitoPowerUp : MonoBehaviour
     private float _powerDuration = 10f;
     private PowerUpSpawner _spawner;
     private PlayerMov _player;
+    private SFXManager _sfx;
 
 
     private void Awake()
     {
         _player = FindObjectOfType<PlayerMov>();
         _spawner = FindObjectOfType<PowerUpSpawner>();
+        _sfx = FindObjectOfType<SFXManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +31,7 @@ public class MitoPowerUp : MonoBehaviour
         _spawner.SpawnCount--;
         _spawner.DurationTimer = _powerDuration;
         _spawner.PowerUpInEffect = true;
+        _sfx.PlayPowerUpClip();
     }
 
 }

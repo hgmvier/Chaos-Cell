@@ -794,48 +794,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ca43ec1f8be5ad45adf768bf2845d74, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1105302668
-GameObject:
+--- !u!1001 &1011776591
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1105302669}
-  - component: {fileID: 1105302670}
-  m_Layer: 0
-  m_Name: PowerUpSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1105302669
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105302668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53, y: -24.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1105302670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1105302668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b66c1f816187cd4ca47912533f2f12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 1550044628363602, guid: 88cba7e7d00e06643833c6ef7b05e6e2,
-    type: 2}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142983776454308, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7288df8b9e9400842b9a45598b271093, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1171555802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1223,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1374936574 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1801002155540194, guid: 7194823ba519b5c408079461390ae2d4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1283500694}
+--- !u!95 &1374936575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1374936574}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ba0ecf9e3bf7fe4faaa5b5f387a63b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1396025365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1454,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114075852670878036, guid: 0dd37620c68ec84449cff0335fa99dfe,
+        type: 2}
+      propertyPath: powerUpClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2df09eb2f88c9324cba64bfcaee1bbb4, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0dd37620c68ec84449cff0335fa99dfe, type: 2}
   m_IsPrefabParent: 0

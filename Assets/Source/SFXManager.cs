@@ -5,6 +5,8 @@ public class SFXManager : MonoBehaviour
 {
     public AudioClip bloodCellClip;
     public AudioClip invaderCellClip;
+    public AudioClip powerUpClip;
+
 
     private AudioSource _source;
 
@@ -22,6 +24,12 @@ public class SFXManager : MonoBehaviour
     public void PlayInvaderCellClip()
     {
         _source.clip = invaderCellClip;
+        _source.Play();
+    }
+
+    public void PlayPowerUpClip()
+    {
+        _source.clip = powerUpClip;
         _source.Play();
     }
 }
