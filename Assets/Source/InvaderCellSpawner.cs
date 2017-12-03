@@ -8,7 +8,7 @@ public class InvaderCellSpawner : MonoBehaviour
     public GameObject invaderCellPrefab;
 
     //time between invader cell spawns
-    private float _spawnInterval = 3f;
+    private float _spawnInterval = 2f;
 
     //countdown to next spawn
     private float _countTimer = 2f;
