@@ -11,6 +11,7 @@ public class BloodCell : MonoBehaviour
     private float _maxSpeed = 21f;
     private BloodCellSpawner _spawner;
     private GameTracker _tracker;
+    private SFXManager _sfx;
 
 
 
@@ -19,6 +20,7 @@ public class BloodCell : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         _spawner = FindObjectOfType<BloodCellSpawner>();
         _tracker = FindObjectOfType<GameTracker>();
+        _sfx = FindObjectOfType<SFXManager>();
         GenerateTravelVector();
     }
 
@@ -89,5 +91,6 @@ public class BloodCell : MonoBehaviour
     {
         _spawner.SpawnCount--;
         _tracker.BloodCellsKilled++;
+        _sfx.PlayBloodCellClip();
     }
 }
