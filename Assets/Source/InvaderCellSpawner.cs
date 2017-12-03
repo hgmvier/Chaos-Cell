@@ -30,7 +30,7 @@ public class InvaderCellSpawner : MonoBehaviour
     {
         if (_countTimer <= 0f)
         {
-            if (_spawnCount >= 10)
+            if (_spawnCount >= _maxSpawnCount)
                 return;
              
 

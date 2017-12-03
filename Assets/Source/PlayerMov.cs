@@ -6,6 +6,12 @@ public class PlayerMov : MonoBehaviour
     private Rigidbody2D _rb2d;
     private float _speed = 20f;
 
+    public float Speed
+    {
+        get { return _speed; }
+        set { _speed = value; }
+    }
+
     private void Awake()
     {
         _rb2d = GetComponent<Rigidbody2D>();
